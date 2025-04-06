@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F0F4F8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stock Market Profit Calculator"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#0B0A0A"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:paddingVertical="10dp"
+        android:background="#E0E0E0"/>
+
+    <Spinner
+        android:id="@+id/broker_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="#F0F0F0"/>
+
+    <EditText
+        android:id="@+id/buy_price_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buy Price"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="#F0F0F0"/>
+
+    <EditText
+        android:id="@+id/sell_price_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sell Price"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="#F0F0F0"/>
+
+    <EditText
+        android:id="@+id/quantity_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="#F0F0F0"/>
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Profit"
+        android:backgroundTint="#FD7400"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E0E0E0">
+        <TextView
+            android:id="@+id/result_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Calculation Result"
+            android:textSize="16sp"
+            android:textColor="#333333"/>
+    </ScrollView>
+</LinearLayout>

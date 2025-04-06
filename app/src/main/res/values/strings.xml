@@ -1,0 +1,82 @@
+<resources>
+    <string name="select_financial_year">Select Financial Year</string>
+    <string name="brokerage_type_prompt">Select Brokerage Type</string>
+    <string name="tax_type_prompt">Select Tax Type</string>
+    <string name="select_trade_type">Select Trade Type</string>
+    <string-array name="trade_types">
+        <item>Intraday Equity</item>
+        <item>Delivery Equity</item>
+    </string-array>
+    <string name="select_dish_prompt">Select a Dish</string>
+
+    <!-- Trade Types Array -->
+    <string-array name="trade_types_array">
+        <item>Intraday</item>
+        <item>Delivery</item>
+        <item>Futures</item>
+        <item>Options</item>
+    </string-array>
+        <string-array name="shapes_array">
+            <item>Square</item>
+            <item>Rectangle</item>
+            <item>Cube</item>
+            <item>Cylinder</item>
+            <item>Cone</item>
+        </string-array>
+
+        <string-array name="units_array">
+            <item>cm</item>
+            <item>m</item>
+        </string-array>
+
+
+    <string-array name="tax_types">
+        <item>Short Term Capital Gains</item>
+        <item>Long Term Capital Gains</item>
+        <item>No Tax</item>
+    </string-array>
+    <string name="app_name">New Calculator</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="convert">Convert</string>
+    <string name="converted_amount">Converted Amount</string>
+    <string name="emi_calculator">EMI Calculator</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="unit_converter">Unit Converter</string>
+    <string name="settings">Settings</string>
+    <string name="net_p_l"><![CDATA[Net P&L:]]></string>
+    <!-- Country List -->
+    <string-array name="financial_years">
+        <item>2023-2024</item>
+        <item>2025-2026</item>
+    </string-array>
+
+    <!-- Currency Symbols -->
+    <string name="currency_india">₹</string>
+    <string name="currency_us">$</string>
+    <string name="currency_china">¥</string>
+    <!-- Tax Payer Types -->
+    <string-array name="tax_payer_types">
+        <item>Individual</item>
+        <item>Company</item>
+    </string-array>
+
+    <!-- Age Categories -->
+    <string-array name="age_categories">
+        <item>Less than 60 years</item>
+        <item>60 to 80 years</item>
+        <item>Above 80 years</item>
+    </string-array>
+
+    <!-- Residential Status -->
+    <string-array name="residential_statuses">
+        <item>Resident</item>
+        <item>Non-Resident</item>
+        <item>Not Ordinarily Resident</item>
+    </string-array>
+    <string name="select_year">Select Year</string>
+    <!-- Prompts -->
+    <string name="select_country">Select Country</string>
+    <string name="select_tax_payer">Select Tax Payer Type</string>
+    <string name="select_age_category">Select Age Category</string>
+    <string name="select_residential_status">Select Residential Status</string>
+</resources>

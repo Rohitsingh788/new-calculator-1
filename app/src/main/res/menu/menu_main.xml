@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/currency_converter"
+        android:title="Currency Converter"
+        android:icon="@drawable/currency_icon"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_unit_converter"
+        android:title="Unit Converter"
+        android:icon="@drawable/unit_icon"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/action_number_system"
+        android:title="Number System Converter"
+        android:icon="@drawable/number_system_icon"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_emi_calculator"
+        android:title="EMI Calculator"
+        android:icon="@drawable/emi_icon"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_discount_check"
+        android:title="Discount Check"
+        android:icon="@drawable/ic_discount_24"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/Geometry"
+        android:title="Geometry Calculator"
+        android:icon="@drawable/geometry_icon"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/Scientific_calculator"
+        android:title="Scientific Calculator"
+        android:icon="@drawable/scientific_icon"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/stock_profit_calculator"
+        android:title="Calculate Profit"
+        android:icon="@drawable/stock_icon"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/TAX"
+        android:title="TAX Calculator"
+        android:icon="@drawable/tax_icon"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/menu_bmi_calculator"
+        android:title="BMI Calculator"
+        android:icon="@drawable/bmi_icon"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_calories_calculator"
+        android:title="Calories Calculator"
+        android:icon="@drawable/calories_icon"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/History"
+        android:title="History"
+        android:icon="@drawable/history_icon"
+        app:showAsAction="never"
+        />
+</menu>

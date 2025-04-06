@@ -1,0 +1,13 @@
+<resources >
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NewCalculator" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#95D6F2</item>
+        <item name="colorPrimaryDark">#FF9800</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
+    </style>
+
+
+    <style name="Theme.NewCalculator" parent="Base.Theme.NewCalculator" />
+</resources>

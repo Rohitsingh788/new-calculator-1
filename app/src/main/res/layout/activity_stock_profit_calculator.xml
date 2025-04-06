@@ -1,0 +1,220 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Back Arrow at Top-Left -->
+            <ImageButton
+                android:id="@+id/buttonBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/arrow_back_24"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="Back"
+                android:layout_gravity="start"/>
+
+            <!-- EMI Image at Center -->
+            <ImageView
+                android:id="@+id/emiImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/stock"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+        <!-- Trade Type Spinner -->
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:id="@+id/tradeTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/trade_types"
+            android:prompt="@string/select_trade_type"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Input Fields -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_marginBottom="16dp">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BUY"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SELL"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QUANTITY"
+                    android:textStyle="bold"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Buy Price">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/buyPrice"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Sell Price">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/sellPrice"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Quantity">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/quantity"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF9800"
+            android:text="Calculate"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Results Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Results"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/turnover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turnover: "
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/brokerage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brokerage: "
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/stt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STT Total: "
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/exchangeTurnoverCharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exchange Turnover Charge: "
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/gst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GST: "
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/sebiCharges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEBI Charges: "
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/stampDuty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stamp Duty: "
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/totalCharges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Tax and Charges: "
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/pointsToBreakeven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points to Breakeven: "
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/netPnL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Net P&amp;L: "
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:id="@+id/tvDisclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Result may not be accurate as different brokers apply multiple or different charges."
+            android:textColor="?attr/colorOnBackground"
+            android:padding="20dp"
+            android:textSize="10sp"
+            android:gravity="center"
+         android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/taxExplanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔹 STT Total: Securities Transaction Tax, charged on buy/sell.\n🔹 Exchange Turnover Charges: Fees paid to stock exchanges.\n🔹 SEBI Charges: Regulatory fee by SEBI for market operations.\n🔹 Stamp Duty: Government tax on trading transactions.\n🔹 Points to Breakeven: Minimum price movement needed to cover costs."
+            android:textSize="8sp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</ScrollView>
